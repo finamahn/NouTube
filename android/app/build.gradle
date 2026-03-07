@@ -139,7 +139,7 @@ android {
             reset()
             enable true
             universalApk false
-            include project.ext.abiCodes.keySet() as String[]
+            include "arm64-v8a"
         }
     }
     android.applicationVariants.configureEach { variant ->
