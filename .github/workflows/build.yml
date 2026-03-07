@@ -28,8 +28,9 @@ jobs:
         run: ./gradlew assembleDebug
         working-directory: android
 
-      - uses: softprops/action-gh-release@v2
-        name: upload apk
+      - name: Upload APKs
+        uses: actions/upload-artifact@v4
         with:
-          body_path: metadata/en-US/changelogs/${{ env.VERSION_CODE }}04.txt
-          files: android/app/build/outputs/apk/release/*.apk
+          name: all-apks-in-one(intermediates)
+          retention-days: 5
+          path: android/app/build/outputs/apk/debug/*.apk
