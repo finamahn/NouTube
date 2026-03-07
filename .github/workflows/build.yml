@@ -22,7 +22,7 @@ jobs:
           yarn expo prebuild -p android --clean --no-install
 
       - name: build apk
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleRelease
         working-directory: android
 
       - name: Upload APKs
