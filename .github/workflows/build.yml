@@ -30,4 +30,4 @@ jobs:
         with:
           name: all-apks-in-one(intermediates)
           retention-days: 5
-          path: android/app/build/outputs/apk/debug/*.apk
+          path: android/app/build/outputs/apk/release/*.apk
