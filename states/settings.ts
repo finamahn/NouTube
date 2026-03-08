@@ -22,7 +22,7 @@ export const settings$ = observable<Store>({
   feedsEnabled: true,
   hideShorts: true,
   keepHistory: true,
-  restoreOnStart: true,
+  restoreOnStart: false,
   sponsorBlock: true,
   userAgent: '',
   theme: null,
