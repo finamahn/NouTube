@@ -64,6 +64,7 @@ class NouWebView @JvmOverloads constructor(context: Context, attrs: AttributeSet
       displayZoomControls = false
     }
     CookieManager.getInstance().setAcceptCookie(true)
+    CookieManager.getInstance().setacceptThirdPartyCookies(true)
 
     // https://stackoverflow.com/a/64564676
     setFocusable(true)
